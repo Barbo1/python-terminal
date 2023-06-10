@@ -1,7 +1,7 @@
 #--------------------------
 #--Starting Configuration--
 #--------------------------
-import getopt, os, re, sys, time, colorama
+import getopt, os, re, colorama
 import command_s
 
 commands_file = open(os.path.dirname(__file__)+"/commands.txt", "r")

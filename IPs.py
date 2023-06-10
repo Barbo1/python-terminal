@@ -5,7 +5,7 @@ import urllib.request
 
 def IPss():
     ip = str(urllib.request.urlopen("http://checkip.dyndns.org").read())
-    ip = re.findall(r"\d{3}\.\d{2,3}\.\d{2,3}.\d{2,3}", ip)
+    ip = re.search(r"\d{3}\.\d{1,3}\.\d{1,3}\.\d{1,3}", ip)
     ip_public = ip[0]
     ip_public = "PcIP4="+ip_public
 
